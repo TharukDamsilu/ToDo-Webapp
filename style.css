@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: absolute;
+    height: 35px;
+    width: 570px;
+    margin: auto;
+    top: 50px;
+    left: 0;
+    right: 0;
+    padding: 30px 0;
+    border-radius: 8px;
+}
+.head{
+    padding-top: 10px;
+    text-align: center;
+    color: #372948;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #B4CDE6;
+    border-bottom: 2px solid #372948;
+}
+#addtask{
+    position: relative;
+    padding: 30px 15px;
+    background-color: #B4CDE6;
+}
+#addtask input{
+    position: relative;
+    padding: 12px;
+    border-radius: 10px;
+    width: 70%;
+    height: 45px;
+    font-size: 15px;
+    border: 2px solid #372948;
+    color: #372948;
+    font-family: 'Roboto Mono', monospace;
+    background: #B4CDE6;
+}
+#addtask input:focus{
+    outline: none;
+    border-radius: 0px;
+    border-color: #B4CDE6;
+    border-bottom-color: #372948;
+}
+#addtask button{
+    position: relative;
+    width: 70px;
+    height: 45px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #372948;
+    font-family: 'Roboto Mono', monospace;
+    color: #B4CDE6;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+#addtask button:hover{
+    background-color: #B4CDE6;
+    color: #372948;
+    border: 2px solid #372948;
+}
+#tasks{
+    position: relative;
+    width: 100%;
+    background: #B4CDE6;
+    padding: 30px 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.task{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #B4CDE6;
+    height: 50px;
+    padding: 5px 10px;
+    border-radius: 0px;
+    margin-top: 10px;
+    border: 2px solid #372948;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.task span{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Roboto Mono', monospace;
+    color: #B73E3E;
+    cursor: pointer;
+}
+.task button{
+    background: #B4CDE6;
+    border: 2px solid #372948;
+    color: #372948;
+    height: 100%;
+    width: 45px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.task button:hover{
+    border: 2px solid #B73E3E;
+    color: #B73E3E;
+}
+.completed{
+    text-decoration: line-through;
+    opacity: 0.7;
+}
